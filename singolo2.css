@@ -25,6 +25,7 @@
 body{
     font-family:"Lato-Light";
     font-size: 10px;
+    width: 100%;
     margin:0;
 }
 
@@ -43,7 +44,7 @@ body{
 
 .portfolio__name{
     margin: 0;
-    padding: 68px 0 0 41px;
+    padding: 68px 0 0 40px;
     font-size: 30px;
     line-height: 18px;
     letter-spacing: -0.1px;
@@ -53,7 +54,7 @@ body{
 
 .portfolio__text{
     margin: 0;
-    padding: 28px 0 0 41px;
+    padding: 28px 0 0 40px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -63,7 +64,7 @@ body{
 /*Tags*/
 
 .tags{
-    padding-left: 42px;
+    padding-left: 41px;
     padding-top: 1px;
 }
 
@@ -115,7 +116,7 @@ body{
 
 .layout-4-column{
     display: flex;
-    padding: 9px 38px 47px 41px;
+    padding: 9px 39px 47px 40px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -137,7 +138,7 @@ body{
 
 .about-us__name{
     margin:0;
-    padding: 68px 0 0 41px;
+    padding: 68px 0 0 40px;
     font-size: 30px;
     line-height: 18px;
     letter-spacing: -0.1px;
@@ -148,7 +149,7 @@ body{
 .about-us__text{
     margin:0;
     text-align: justify;
-    padding: 27px 39px 0 41px;
+    padding: 27px 39px 0 40px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -159,7 +160,7 @@ body{
 
 .layout-3-columns{
     display: flex;
-    padding:45px 35px 57px 41px;
+    padding:45px 36px 57px 40px;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -214,7 +215,7 @@ body{
 .link{
     display: inline-block;
     list-style-type: none;
-    border: 1px solid #747B94;
+    border: 1px solid #646B87;
     border-radius: 50%;
 }
 

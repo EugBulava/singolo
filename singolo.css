@@ -3,9 +3,15 @@
     src: url(assets/fonts/Lato-Bold.ttf); 
    }
 body{
-	max-width:1020px;
-	margin:0 auto;
+	width: 100%;
+	margin: 0;
 }
+
+.wrapper{
+	max-width:1020px;
+	margin:auto;
+}
+
 /*header*/
 header{
 	width:100%;
@@ -26,6 +32,11 @@ header{
 
 .logo-star{
 	color: #F06C64;
+}
+
+.logo-singolo::after{
+    content: "*";
+    color:#F06C64;;
 }
 
 h1{
