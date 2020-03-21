@@ -163,23 +163,69 @@ a{
 }
 
 .iphone-v{
-    display: inline-block;
-    padding: 53px 0 0 70px ;
+    display: inline;
+    padding: 53px 0px 0 70px ;
+    
+    
 }
 
 .iphone-h{
-    display: inline-block;
+    display: inline;
     padding-bottom: 122px;
     padding-left: 72px;
+    padding-right: 9px;
 }
 
-.iphone-off{
-    
+.slider_show{
+    margin: 0;
+    list-style: none;
+    white-space: nowrap;
+    width: 870px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider_show li:first-child{
+margin-left: -940px;
+}
+
+.move_right{
+    margin-left: -890px;
+    transition: all 1s ease-in-out;
+}
+
+.move_left{
+    margin-left: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.slider_show_1{
+    display: inline-block;
+    height: 100%;
+    padding-right: 35px;
+}
+
+.slider_show_2{
+    display: inline-block;
+    height: 100%;
+    padding-right: 35px;
+}
+
+.slider_show_3{
+    display: inline-block;
+    height: 100%;
+    padding-right: 35px;
+}
+
+.slider_show_4{
+    display: inline-block;
+    height: 100%;
+    padding-right: 35px;
 }
 
 /*main*/
 
-main{
+#anchor_services{
 	height:494px;
 	background-color:#F2F2F2;
 	border-bottom: solid 6px #FFFFFF;

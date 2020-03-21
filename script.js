@@ -5,12 +5,13 @@ const LAYOUT = document.getElementById('layout');
 const BUTTON = document.getElementById('btn');
 const CLOSE_MESSAGE = document.getElementById('close-message');
 const TAG = document.getElementById('tags');
+const SECTIONS = document.querySelectorAll('#body > section');
 
 
-function navigation(){
+/*function navigation(){
     NAVBAR.querySelectorAll('a').forEach(el => el.classList.remove('checked'));
     event.target.classList.add('checked');
-}
+}*/
 
 function tags(){
     if(event.target.classList.contains('tag_first')){
@@ -141,11 +142,13 @@ BUTTON.addEventListener('click', () => {
         }else{
             document.getElementById('result_description').innerText = "Без описания";
         }
-
         document.getElementById('message-block').classList.remove('hidden');
     } else {
         alert('WRONG NAME OR EMAIL');
     }
+
+
+
     event.preventDefault();
 })
 
@@ -153,6 +156,28 @@ CLOSE_MESSAGE.addEventListener('click', () => {
     document.getElementById('message-block').classList.add('hidden');
     document.getElementById('form').reset();
 })
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+    const current_position = window.scrollY;
+    
+    SECTIONS.forEach((el) => {
+        if(el.offsetTop <= current_position && (el.offsetTop + el.offsetHeight) > current_position){
+            document.querySelectorAll('#navigation a').forEach((a) => {
+                a.classList.remove('checked');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                    a.classList.add('checked');
+                }
+            })
+        }else if(current_position>2590){
+            document.querySelectorAll('#navigation a').forEach((a) => {
+                a.classList.remove('checked');
+                document.getElementById('lol').classList.add('checked');
+            })
+        }
+    });
+}
 
 
 

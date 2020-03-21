@@ -5,8 +5,8 @@
     <title>SINGOLO*</title>
 	<link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div id="anchor_home" class="fixed_header">
+  <body id="body">
+    <section id="anchor_home" class="fixed_header">
         <header>
             <div class="wrapper">
                 <div class = "header-items">
@@ -23,13 +23,13 @@
                             <li class = "point">·</li>
                             <li class = "nav" onclick="navigation()"><a href="#anchor_about">about</a></li>
                             <li class = "point">·</li>
-                            <li class = "nav" onclick="navigation()"><a href="#anchor_contact">contact</a></li>
+                            <li class = "nav" onclick="navigation()"><a href="#anchor_contact" id = "lol">contact</a></li>
                         </ul>
                     </div>
                 </div>			
             </div>
         </header>
-    </div>
+    </section>
 	
 	<div class = "container">
 		<div class="wrapper">
@@ -38,7 +38,7 @@
 					<a onclick="prev()"><img src = "assets/img/slider-left.svg" alt = "prev-slide"></a>
 				</div>
 				<div class = "next-slide">
-					<a onclick="next()"><img src = "assets/img/slider-right.svg" alt = "next-slide"></a>
+					<a onclick=" next()"><img src = "assets/img/slider-right.svg" alt = "next-slide"></a>
                 </div>
                 <div class="slide">
                     <img id="iphone_1" class="iphone-v" src = "assets/img/iphone_v.png" alt = "vertical-iphone">
@@ -53,7 +53,7 @@
 	
 	
 	
-	<main id="anchor_services">
+	<section id="anchor_services">
 		<div class = "wrapper">
 			<div class = "main-name">Our Services</div>
 		<div class = "text"><p class = "first">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p></div>
@@ -90,7 +90,7 @@
 			</div>
 		</div>
 		</div>
-	</main>
+	</section>
 	<section id="anchor_portfolio" class="portfolio">
         <div class="wrapper">
             <div class="portfolio__head">
