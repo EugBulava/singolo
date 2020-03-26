@@ -904,7 +904,7 @@ footer{
     .container{
         width:100vw;
         margin: auto;
-        height:447.25px;
+        height:445.25px;
     }
 
     .iphone-v{
@@ -924,14 +924,14 @@ footer{
 
     .prev-slide{
         position:absolute;
-        top: 220px;
+        top: 215px;
         left: 29.42px;
     }
     
     .next-slide{
         position: absolute;
         left: 725.14px; 
-        top: 220px;  
+        top: 215px;  
     }
     
     .slider{
@@ -962,21 +962,21 @@ footer{
     #anchor_services{
         width:100%;
         margin: auto;
-        height: 674.62px;
+        height: 668.62px;
     }
 
     .text{
         width: 687px;
         padding-left: 41px;
         padding-right: 40px;
-        padding-top: 18px;
+        padding-top: 23px;
         height: 99px;
     }
 
     .main-name{
         padding-left: 41px;
         padding-right: 40px;
-        padding-top: 39.62px;
+        padding-top: 48px;
     }
 
     .main-services{
@@ -995,13 +995,13 @@ footer{
     }
 
     .service-3, .service-4, .service-5, .service-6{
-        margin-top: 39px;
+        margin-top: 10px;
     }
 
     .portfolio{
         width:100%;
         margin: auto;
-        height:1094.4px;
+        height:1096.4px;
     }
 
     .portfolio__head{
@@ -1011,6 +1011,11 @@ footer{
     .about-us{
         width:100vw;
         margin: auto;
+    }
+
+    .about-us__name{
+        padding-top: 61px;
+        padding-left: 40px;
     }
 
     .about-us>.wrapper{
@@ -1024,6 +1029,21 @@ footer{
 
     .layout-3-columns{
         flex-wrap: nowrap;
+        padding-top: 31px;
+        padding-left: 35px;
+        padding-bottom: 53px;
+    }
+
+    .employer__name{
+        margin-top: 10px;
+    }
+
+    .emploer__text{
+        margin-top: 4px;
+    }
+
+    .links{
+        padding-top: 0;
     }
 
     .emploer__picture>img{
@@ -1035,12 +1055,45 @@ footer{
         width: 768px;
     }
 
-    .contact__info{
-        padding-left: 20px;
+
+    .get-quote__header{
+        padding-top: 63px;
+        padding-left: 43px;
+        padding-right: 20px;
     }
+
+    .layout-2-column{
+        padding-top: 24px;
+        padding-left: 39px;
+        padding-bottom: 37px;
+    }
+
+    .contact__info{
+        padding-left: 0px;
+    }
+
+    input{
+        margin-bottom: 12px;
+        width: 91.8%;
+    }
+
+    textarea{
+        padding-bottom: 108px;
+        width: 91.8%;
+    }
+
+    .contact__info_name{
+        padding-bottom: 3px;
+    }
+
+    .contact__info_data{
+        padding-top: 10px;
+    }
+
+
 }
 
-@media (min-width: 375px) and (max-width: 767px){
+@media (max-width: 767px){
 
     .nav-bar{
         display: none;
@@ -1107,5 +1160,41 @@ footer{
     .slide_2{
         padding-left: 10px;
     }
+
+    .text{
+        width: 314px;
+        padding: 18px 30px 0 32px;
+        height: 214px;
+    }
+
+    .first p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+    #anchor_services{
+        height: 1032.6px;
+    }
+
+
+    .main-name{
+        padding-top: 25.6px;
+        padding-left: 32px;
+    }
+    .main-services{
+        width: 300px;
+        height: 699px;
+        padding-left: 32px;
+    }
+
+    .service-2,.service-3,.service-4,.service-5,.service-6{
+        padding-top: 15px;
+        padding-left: 0;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+
 
 }
