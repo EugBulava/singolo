@@ -1157,7 +1157,7 @@ footer{
     }
 
     .text{
-        width: 314px;
+        width: 313px;
         padding: 18px 30px 0 32px;
         height: 214px;
     }
@@ -1194,9 +1194,15 @@ footer{
         width: 100%;
     }
 
-    .pic>img{
+    .pic img{
         width: 151px;
         height: 128px;
+    }
+
+    .layout-4-column .pic .bordered_picture{
+        border: solid 5px #F06C64;
+        height: 118px;
+        width: 144px;
     }
 
     .layout-4-column div:nth-child(n+9){
