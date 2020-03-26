@@ -1018,10 +1018,6 @@ footer{
         padding-left: 40px;
     }
 
-    .about-us>.wrapper{
-        width: 768px;
-    }
-
     .about-us__header{
         width: 100%;
         height: auto;
@@ -1050,11 +1046,6 @@ footer{
         max-width: 100%;
         height: auto;
     }
-
-    .get-quote>.wrapper{
-        width: 768px;
-    }
-
 
     .get-quote__header{
         padding-top: 63px;
@@ -1094,6 +1085,10 @@ footer{
 }
 
 @media (max-width: 767px){
+
+    header{
+        position: static;
+    }
 
     .nav-bar{
         display: none;
@@ -1195,6 +1190,169 @@ footer{
         margin: 0;
     }
 
+    .portfolio__head{
+        width: 100%;
+    }
 
+    .pic>img{
+        width: 151px;
+        height: 128px;
+    }
 
+    .layout-4-column div:nth-child(n+9){
+        display: none;
+    }
+
+    .layout-4-column{
+        padding: 0px 30px 42px 30px;
+    }
+    
+    .portfolio{
+        height: 100%;
+    }
+
+    .layout-3-columns{
+        flex-wrap: wrap;
+    }
+    
+    .portfolio__name{
+        padding-top: 42px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .portfolio__text{
+        padding-top: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 305px;
+        text-align: left;
+    }
+
+    .tags{
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-us__name{
+        padding-top: 33px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .about-us__text{
+        padding-top: 14px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 300px;
+        text-align: left;
+    }
+
+    .layout-3-columns{
+        padding-top: 14px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 11px;
+    }
+
+    .emploer__picture>img{
+        width: 314px;
+        height: auto;
+    }
+
+    .emploer{
+        width: 100vw;
+    }
+
+    .employer__name{
+        margin:0;
+        padding-top: 18px;
+    }
+
+    .emploer__text{
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .links{
+        margin: 0;
+        padding-top: 9px;
+        padding-bottom: 34px;
+    }
+    .get-quote__header{
+        padding-top: 44px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .get-quote_text{
+        text-align: left;
+        padding-right: 10px;
+    }
+
+    .layout-2-column{
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-wrap: wrap;
+        padding-bottom: 42px;
+    }
+
+    input, textarea{
+        width: 300px;
+    }
+
+    .first{
+        width: 300px;
+        text-align: left;
+    }
+
+    .button{
+        margin-left: 0;
+    }
+
+    .button-sub{
+        width:100%;
+    }
+
+    .contact__info{
+        flex-basis: 100%;
+    }
+
+    .contact__info_name{
+        padding: 0;
+        padding-top: 32px;
+    }
+
+    .contact__info_text{
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    .contact__info_data{
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .footer{
+        height: 45px;
+    }
+
+    .footer_left{
+        display: none;
+    }
+
+    .footer_right{
+        padding: 0;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .footer_links{
+        margin-top: 0;
+        padding-top: 20px;
+    }
 }
