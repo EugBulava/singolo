@@ -86,8 +86,8 @@ header{
 }
 
 .nav-bar{
-	display:inline-block;
-	padding-left:400px;
+    display:inline-block;
+    float: right;
 }
 
 .nav-bar_ul>li{
@@ -136,9 +136,8 @@ a{
 .slider{
 	position:relative;
 	height:594px;
-	width:936px;
-	margin-left:42px;
-	margin-right:42px;
+	padding-left:42px;
+	padding-right:42px;
 }
 
 .prev-slide{
@@ -147,9 +146,10 @@ a{
 }
 
 .next-slide{
-	position:absolute;
+	position: absolute;
 	top:281px;
-	left:922px;
+    left:922px;
+    
 }
 
 .prev-slide:hover{
@@ -469,18 +469,15 @@ pre{
 
 .layout-3-columns{
     display: flex;
-    padding:45px 36px 57px 40px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding:35px 36px 48px 31px;
+    
+    flex-wrap: nowrap;
 
 }
 
 .emploer{
     width: 304px;
-}
-
-.emploer_2{
-    padding-right: 1px;
+    margin: 1%;
 }
 
 .employer__name{
@@ -821,24 +818,25 @@ footer{
 }
 
 .footer{
-    display: flex;
-    padding-bottom: 12px;
+    padding-bottom: 31px;
 }
 
 .footer_left{
-    flex-basis: 50%;
+    display: inline-block;
     padding: 30px 0 0 41px;
 }
 
 .footer_right{
-    flex-basis: 50%;
-    padding: 11px 0 0 595px;
+    display: inline-block;
+    float: right;
+    padding-right: 40px;
 }
 
 /* Links */
 
 .footer_links{
     padding: 0;
+    margin-top: 20px;
 }
 
 .footer_link{
@@ -879,4 +877,235 @@ footer{
 .footer_link_fourth:hover{
     border-color: red;
     box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+@media (max-width: 1019px) {
+
+    body{
+        width:100vw;
+    }
+
+    .wrapper{
+        height:100%;
+        width: 768px;
+    }
+
+    .fixed_header{
+        width:100vw;
+    }
+
+    header{
+        width: 100vw;
+    }
+    .header-items{
+        width: 100%;
+    }
+
+    .container{
+        width:100vw;
+        margin: auto;
+        height:447.25px;
+    }
+
+    .iphone-v{
+        width: 180.71px;
+        height: 363.67px;
+        padding-top: 41.04px;
+        padding-left: 84.33px;
+    }
+
+    .iphone-h{
+        padding-left: 54.96px;
+        padding-bottom: 90.35px;
+        padding-right: 0;
+        width: 363.67px;
+        height: 180.71px;
+    }
+
+    .prev-slide{
+        position:absolute;
+        top: 220px;
+        left: 29.42px;
+    }
+    
+    .next-slide{
+        position: absolute;
+        left: 725.14px; 
+        top: 220px;  
+    }
+    
+    .slider{
+        height:100%;
+        padding: 0;
+        width: 100%;
+    }
+
+    .slide{
+        height: 100%;
+    }
+
+    .second_slide{
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide_2{
+        height: 100%;
+        padding-left: 40px;
+    }
+
+    .header-items{
+        padding-right: 40px;
+        width: 688px;
+    }
+
+    #anchor_services{
+        width:100%;
+        margin: auto;
+        height: 674.62px;
+    }
+
+    .text{
+        width: 687px;
+        padding-left: 41px;
+        padding-right: 40px;
+        padding-top: 18px;
+        height: 99px;
+    }
+
+    .main-name{
+        padding-left: 41px;
+        padding-right: 40px;
+        padding-top: 39.62px;
+    }
+
+    .main-services{
+        padding-top: 28px;
+        width: 687px;
+        height: 418px;
+    }
+
+    .service-3, .service-5{
+        padding-left: 0;
+        margin-top: 35px;
+    }
+
+    .service-2, .service-4, .service-6{
+        padding-left: 53px;
+    }
+
+    .service-3, .service-4, .service-5, .service-6{
+        margin-top: 39px;
+    }
+
+    .portfolio{
+        width:100%;
+        margin: auto;
+        height:1094.4px;
+    }
+
+    .portfolio__head{
+        width: 690px;
+    }
+
+    .about-us{
+        width:100vw;
+        margin: auto;
+    }
+
+    .about-us>.wrapper{
+        width: 768px;
+    }
+
+    .about-us__header{
+        width: 100%;
+        height: auto;
+    }
+
+    .layout-3-columns{
+        flex-wrap: nowrap;
+    }
+
+    .emploer__picture>img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .get-quote>.wrapper{
+        width: 768px;
+    }
+
+    .contact__info{
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+
+    .nav-bar{
+        display: none;
+    }
+
+    .wrapper{
+        width: 375px;
+    }
+
+    .header-items{
+        width: 375px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 24px;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+    }
+
+    .fixed_header , header{
+        height: 71px;
+    }
+
+    .container{
+        height: 218.38px;
+        padding-top: 6px;
+    }
+
+    .prev-slide>a>img{
+        width: 14.08px;
+        height: 24.9px;
+    }
+
+    .prev-slide{
+        top:98.45px;
+        left: 10.25px;
+    }
+
+    .iphone-v{
+        padding-left: 41.18px;
+        padding-top: 20.04px;
+        width:88.24px;
+        height: 177.57px;
+    }
+
+    .iphone-h{
+        padding-left: 26.84px;
+        padding-bottom: 44.12px;
+        width:177.57px;
+        height: 88.24px;
+    }
+    
+    .next-slide>a>img{
+        width: 14.08px;
+        height: 24.9px;
+    }
+
+    .next-slide{
+        top:98.45px;
+        left: 351.29px;
+    }
+
+    .slide_2{
+        padding-left: 10px;
+    }
+
 }
