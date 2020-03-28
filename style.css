@@ -1463,5 +1463,14 @@ footer{
         padding:5px 10px 10px 10px;
     }
 
-    
+    .logo_for_burger{
+        position: absolute;
+        z-index: 1;
+        margin-left: 40px;
+        transition: 1s;
+    }
+
+    .tag:hover{
+        text-decoration: none;
+    }
 }

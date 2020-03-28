@@ -115,10 +115,20 @@ var slideIndex = 1;
 
 function next() {
     visibleSlide(slideIndex += 1);
+    if(document.getElementsByClassName('slide')[1].style.cssText == "display: block;"){
+        document.getElementById('container').style = "background-color: #648BF0; border-bottom-color: rgb(83, 121, 216);transition: 0.7s;";
+    }else{
+        document.getElementById('container').style = "background-color: #F06C64; border-bottom-color: #EA676B;;transition: 0.7s;";
+    }
 }
 
 function prev() {
     visibleSlide(slideIndex -= 1);  
+    if(document.getElementsByClassName('slide')[1].style.cssText == "display: block;"){
+        document.getElementById('container').style = "background-color: #648BF0; border-bottom-color: rgb(83, 121, 216);transition: 0.7s; ";
+    }else{
+        document.getElementById('container').style = "background-color: #F06C64; border-bottom-color: #EA676B;;transition: 0.7s;";
+    }
 }
 
 function border_for_picture() {
@@ -180,6 +190,13 @@ function onScroll(event) {
 }
 
 if (matchMedia('(max-width: 767px)').matches) {
+
+    var NAVIGTION_BURGER = document.getElementById('navigation');
+    var k = NAVIGTION_BURGER.getElementsByClassName('point').length;
+    for(var i = 0; i<= k-1; i++){
+        NAVIGTION_BURGER.getElementsByClassName('point')[0].remove();
+    }
+
     document.getElementById('header-items').prepend(document.createElement("div"));
     document.getElementById('header-items').firstChild.style = "display:inline-block; position:relative; width:30px; height:30px;padding-left:20px;";
     document.getElementById('header-items').firstChild.prepend(document.createElement("a"));
@@ -199,10 +216,12 @@ if (matchMedia('(max-width: 767px)').matches) {
             BUTTON_BURGER.classList.add('active_burger');
             document.getElementById('header-items').firstChild.style = "display:inline-block; position:absolute; width:278px; height:100vh; background-color:#2D303A; z-index:1; display:block; left:0;"
             document.getElementById('navigation').style = "display: block;";
+            document.getElementById('h1').classList.add('logo_for_burger');
         }else {
             BUTTON_BURGER.classList.remove('active_burger');
             document.getElementById('header-items').firstChild.style = "display:inline-block; position:absolute; width:278px; height:100vh; background-color:#2D303A; z-index:1; display:none;left:-275px;"
             document.getElementById('navigation').style = "display: none;";
+            document.getElementById('h1').classList.remove('logo_for_burger');
         }
     });
 
@@ -264,15 +283,11 @@ if (matchMedia('(max-width: 767px)').matches) {
             document.getElementById('header-items').firstChild.style = "display:inline-block; position:absolute; width:278px; height:100vh; background-color:#2D303A; z-index:1; display:none;left:-275px;"
             document.getElementById('navigation').style = "display: none;";
         }
-    });    
+    }); 
 
 
 
-    var NAVIGTION_BURGER = document.getElementById('navigation');
-    var k = NAVIGTION_BURGER.getElementsByClassName('point').length;
-    for(var i = 0; i<= k-1; i++){
-        NAVIGTION_BURGER.getElementsByClassName('point')[0].remove();
-    }
+    
 
 }
 
